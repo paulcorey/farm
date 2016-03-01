@@ -1,0 +1,35 @@
+Eclipse IDE Assumed (but can also be used with JGrasp - see note at end)
+
+Step 1:
+
+In order to get this application running you need to start mySql Server
+and import/restore the database MySQlDataBase.
+
+When restored the datbase will be called farm and shall have a single
+table called sheep.
+
+Step 2:
+
+Create a new Project in Eclipse called "Farm" and Drag and drop the two 
+Java Source code files into that projects source code package 
+(FarmTester.java and Sheep.java).
+
+Step 3:  
+Ensure the logon and password are correct for the database. In the java source 
+file "Sheep.Java" login is "root" and password is "password". Change the code if
+the login does not match your database.
+
+
+Step 4:
+Java requires an ODBC connector jar to connect to the database. The connector 
+is "mysql-connector-java-5.1.38-bin.jar". On the context menu of the project 
+(right click) choose "properties" and then "Java build path". 
+Under Libraries add the jar.
+
+Step 5:
+You should now be able to excecute the application "Farmtester.Java"
+
+
+
+Note for JGrasp
+Place the jar in "jgrasp/extensions/classes"
